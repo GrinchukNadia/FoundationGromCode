@@ -1,0 +1,38 @@
+@import "variables.scss";
+@import "breakpoints.scss";
+@import "buttons.scss";
+@import "container.scss";
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: $initial-font;
+  font-family: 'Work Sans', sans-serif;
+  color: $text-color;
+  margin: 0 auto;
+}
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+  padding: 0;
+}
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+@import "header.scss";
+@import "logo.scss";
+@import "headline.scss";
+@import "about.scss";
+@import "customers.scss";
+@import "features.scss";
+@import "inbox.scss";
+@import "communication.scss";
+@import "audiences.scss";
+@import "feedback.scss";
+@import "hiring.scss";
+@import "order.scss";
+@import "footer.scss";

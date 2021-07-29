@@ -1,0 +1,50 @@
+.about {
+  background-color: $about-bg-color;
+
+  &__inner {
+    padding-top: 46px;
+    padding-bottom: 46px;
+    padding-left: 15px;
+    padding-right: 15px;
+    
+    @include query($middle) {
+      padding-left: $side-padding;
+      padding-right: $side-padding;
+      
+    }
+    
+    @include for-large {
+      padding-top: 77px;
+      padding-bottom: 76px;
+    }
+    
+    @include for-large {
+      display: flex;
+    }
+       
+    &_block {
+      font-size: 22px;
+      line-height: 32px;
+      
+      @include for-large {
+        max-width: 555px;
+        padding-left: 0;
+        padding-right: 0;
+      }
+
+      &:first-child {
+        margin-bottom: 20px;
+
+        @include for-large {
+          margin-bottom: 0;
+          margin-right: 29px;
+        }
+      }
+
+      h3 {
+        font-weight: 700;
+        margin-bottom: 23px;
+      }
+    }
+  }
+}

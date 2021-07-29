@@ -1,0 +1,145 @@
+.communication {
+  padding-right: 15px;
+  padding-left: 15px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+
+  @include for-large {
+    padding-top: 110px;
+    padding-bottom: 110px;
+  }
+  @include for-extra-large {
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+  &__info {
+    
+    @include query($middle) {
+      display: flex;
+      justify-content: space-between;
+    }
+    @include for-extra-large {
+      margin-bottom: 26px;
+    }
+    
+    &-container {
+      margin-bottom: 40px;
+
+      @include query($middle) {
+        max-width: 461px;
+      }
+    }
+
+    &_tip {
+      font-weight: 700;
+      font-size: 22px;
+      line-height: 34px;
+      color: #0189D1;
+      margin-bottom: 17px;
+
+      @include for-large {
+        margin-bottom: 24px;
+      }
+    }
+    &_header {
+      font-weight: 700;
+      font-size: 40px;
+      line-height: 40px;
+      letter-spacing: -0.357143px;
+      margin-bottom: 18px;
+
+      @include for-medium {
+        font-size: 56px;
+        line-height: 56px;
+        letter-spacing: -0.5px;
+      }
+      @include for-large {
+        margin-bottom: 30px;
+      }
+    }
+    &_text {
+      font-size: 24px;
+      line-height: 34px; 
+      margin-bottom: 30px;
+
+      @include for-large {
+        margin-bottom: 39px;
+      }
+    }
+    
+    figure {
+      margin: 0;
+      margin-bottom: 40px;
+
+      @include for-large {
+        margin-bottom: 0;
+      }
+
+      img {
+        max-width: 100%;
+        max-height: 426px;
+        margin-bottom: 17px;
+
+        @include for-extra-large {
+          margin-right: 100px;
+        }
+      }
+      figcaption {
+        font-size: 14px;
+        line-height: 22px;
+        text-align: center;
+        color: #2b292d99;
+        display: flex;
+        align-items: flex-start;
+
+        @include for-medium {
+          padding-left: 86px;
+        }
+      }
+    }
+  }
+
+  &__line {
+    width: 150px;
+    height: 1px;
+    background-color: $black;
+    opacity: 0.1;
+    margin-bottom: 33px;
+  }
+
+  &__about {
+    @include for-medium {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+    
+    &_block {
+      display: flex;
+      flex-direction: column;
+      font-size: 18px;
+      line-height: 26px;
+      margin-bottom: 32px;
+      &:last-child {
+        margin-bottom: 0;
+      }
+      @include query(767px) {
+        max-width: 360px;
+      }
+      @include for-extra-large {
+        margin-bottom: 0;
+      }
+
+      p {
+        display: block;
+        margin-bottom: 12px;
+      }
+      a {
+        font-size: 16px;
+        color: #3142c6;
+        font-weight: 700;
+      }
+    }
+  }
+}

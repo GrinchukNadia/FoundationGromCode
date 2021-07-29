@@ -1,0 +1,37 @@
+$sm: 320px;
+$md: 670px;
+$middle: 895px;
+$lg: 1070px;
+$xl: 1400px;
+
+@mixin query($size) {
+  @media screen and (min-width: $size) {
+    @content;
+  }
+}
+
+@mixin for-extra-small {
+  @media screen and (max-width: $sm) {
+    @content;
+  }
+}
+@mixin for-small {
+  @media screen and (min-width: $sm) {
+    @content;
+  }
+}
+@mixin for-medium {
+  @media screen and (min-width: $md) {
+    @content;
+  }
+}
+@mixin for-large {
+  @media screen and (min-width: $lg) {
+    @content;
+  }
+}
+@mixin for-extra-large {
+  @media screen and (min-width: $xl) {
+    @content;
+  }
+}

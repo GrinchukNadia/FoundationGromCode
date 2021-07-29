@@ -1,0 +1,120 @@
+.hiring {
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @include for-large {
+    padding-top: 106px;
+    padding-bottom: 110px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  &__header {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 40px;
+    text-align: center;
+    letter-spacing: -0.357143px;
+    margin-bottom: 18px;
+
+    @include for-extra-large {
+      font-size: 56px;
+      line-height: 56px;
+      letter-spacing: -0.5px;
+      margin-bottom: 20px;
+    }
+  }
+  &__text {
+    font-size: 24px;
+    line-height: 34px;
+    text-align: center;
+    margin-bottom: 30px;
+    max-width: 555px;
+
+    @include for-extra-large {
+      font-size: 24px;
+      line-height: 34px;
+      margin-bottom: 28px;
+    }
+  }
+  &__btn {
+    width:  100%;
+    max-width: 290px;
+    margin-bottom: 39px;
+
+    @include for-extra-large {
+      max-width: 247px;
+      margin-bottom: 110px;
+    }
+
+  }
+  &__proposals {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    &_block {
+      position: relative;
+      width:  100%;
+      max-width: 750px;
+      border: 1px solid #2b292d33;
+      border-radius: 8px;
+      box-shadow: -250px 0px 0px -200px #2b292d33 inset;
+      margin-bottom: 15px;
+      padding: 19px 50px 19px 20px;
+      cursor: pointer;
+
+      @include for-medium {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 26px 114px 26px 25px;
+        box-shadow: none;
+      }
+
+      &:hover {
+        background-color: #3141C5;
+        box-shadow: none;
+        h3, span {
+          color: $white;
+        }
+        .hiring__proposals_arrow {
+          fill: $white;
+        }
+      }
+      h3 {
+        font-weight: 700;
+        font-size: 22px;
+        line-height: 28px;
+        margin-bottom: 17px;
+
+        @include for-medium {
+          margin-bottom: 0;
+        }
+      }
+      span {
+        font-size: 16px;
+        line-height: 22px;
+        color: #2B292D99;
+        mix-blend-mode: normal;
+      }
+      img {
+      }
+    }
+    
+    &_arrow {
+      position: absolute;
+      right: 22px;
+      top: 50%;
+      transform: translateY(-50%);
+      transform: rotate(-90deg);
+      fill: #2B292D;
+    }
+  }
+}

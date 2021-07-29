@@ -1,0 +1,23 @@
+.dark-button,
+.light-button {
+  border: none;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 13px;
+  padding: 17px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+.dark-button {
+  background-color: #3040C4;
+  color: #ffffff;
+}
+
+.light-button {
+  background-color: #ffffff;
+  color: #3040C4; 
+}
