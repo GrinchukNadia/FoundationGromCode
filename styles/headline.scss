@@ -35,7 +35,7 @@
   
       @include for-medium {
         font-size: 80px;
-        line-height: 78px;
+        line-height: 82px;
         letter-spacing: -0.5px;
       }
   
@@ -71,7 +71,7 @@
     }
   
     @include for-large {
-      margin-bottom: 77px;
+      margin-bottom: 126px;
     }
     
     &_btn {
@@ -101,7 +101,7 @@
   
     @include query(1100px) {
       position: absolute;
-      right: -111px;
+      right: -103px;
     }
     
     img {

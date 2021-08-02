@@ -274,7 +274,7 @@ header {
 @media screen and (min-width: 670px) {
   .headline__promo h1 {
     font-size: 80px;
-    line-height: 78px;
+    line-height: 82px;
     letter-spacing: -0.5px;
   }
 }
@@ -311,7 +311,7 @@ header {
 }
 @media screen and (min-width: 1070px) {
   .headline__buttons {
-    margin-bottom: 77px;
+    margin-bottom: 126px;
   }
 }
 .headline__buttons_btn {
@@ -341,7 +341,7 @@ header {
 @media screen and (min-width: 1100px) {
   .headline__image {
     position: absolute;
-    right: -111px;
+    right: -103px;
   }
 }
 .headline__image img {
@@ -1058,9 +1058,9 @@ header {
 }
 .audience__blocks_block {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
   margin: 0;
   margin-bottom: 15px;
   padding: 0;
@@ -1085,12 +1085,12 @@ header {
     margin-right: 0 !important;
   }
 }
-@media screen and (min-width: 580px) {
+@media screen and (min-width: 670px) {
   .audience__blocks_block:nth-child(odd) {
     margin-right: 15px;
   }
 }
-@media screen and (min-width: 580px) {
+@media screen and (min-width: 670px) {
   .audience__blocks_block:nth-child(3) {
     margin-bottom: 0;
   }

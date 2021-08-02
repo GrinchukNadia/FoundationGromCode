@@ -111,13 +111,12 @@
     @include for-extra-large {
       justify-content: space-between;
     }
-    
-    
+      
     &_block {
       display: flex;
-      flex-wrap: wrap;
+      flex-direction: column;
       justify-content: center;
-      align-items: flex-start;
+      align-items: center;
       
       margin: 0;
       margin-bottom: 15px;
@@ -146,13 +145,13 @@
         }
       }
       &:nth-child(odd) {
-        @include query(580px) {
+        @include for-medium {
           margin-right: 15px;
         }
       }
 
       &:nth-child(3) {
-        @include query(580px) {
+        @include for-medium {
           margin-bottom: 0;
         }
         @include query(863px) {
