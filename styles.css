@@ -65,8 +65,8 @@ header {
     background-color: #F3C6BD;
     padding-top: 41px;
     margin-bottom: 76px;
-    padding-right: 20px;
-    padding-left: 20px;
+    padding-right: 15px;
+    padding-left: 15px;
   }
 }
 
@@ -237,15 +237,13 @@ header {
 .headline-outer {
   background-color: #F3C6BD;
   padding: 35px 0 0 0;
+  overflow: hidden;
 }
 
 .headline {
   width: 100%;
-}
-@media screen and (min-width: 670px) {
-  .headline {
-    overflow: hidden;
-  }
+  max-width: 1140px;
+  position: relative;
 }
 @media screen and (min-width: 1100px) {
   .headline {
@@ -253,17 +251,13 @@ header {
   }
 }
 .headline__promo {
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 @media screen and (min-width: 1070px) {
   .headline__promo {
     z-index: 1;
     margin-right: -403px;
-  }
-}
-@media screen and (min-width: 1400px) {
-  .headline__promo {
     padding-left: 0;
     padding-right: 0;
   }
@@ -308,7 +302,7 @@ header {
 .headline__buttons {
   display: flex;
   flex-direction: column;
-  margin-bottom: 33px;
+  margin-bottom: 30px;
 }
 @media screen and (min-width: 430px) {
   .headline__buttons {
@@ -339,16 +333,15 @@ header {
   }
 }
 .headline__image {
-  width: 100%;
   padding-bottom: 36px;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-right: -105px;
 }
-@media screen and (min-width: 670px) {
+@media screen and (min-width: 1100px) {
   .headline__image {
-    margin-right: -218px;
+    position: absolute;
+    right: -111px;
   }
 }
 .headline__image img {
@@ -366,8 +359,8 @@ header {
 }
 @media screen and (min-width: 895px) {
   .about__inner {
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
   }
 }
 @media screen and (min-width: 1070px) {
@@ -430,7 +423,7 @@ header {
     margin-top: 30px;
     margin-bottom: 106px;
     justify-content: space-between;
-    padding: 0 20px;
+    padding: 0 15px;
   }
 }
 .customers__inner_block {
@@ -1067,6 +1060,7 @@ header {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  align-items: flex-start;
   margin: 0;
   margin-bottom: 15px;
   padding: 0;
