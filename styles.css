@@ -994,9 +994,9 @@ header {
   margin-bottom: 30px;
   max-width: 555px;
 }
-@media screen and (min-width: 1400px) {
+@media screen and (min-width: 1070px) {
   .audience__info_text {
-    margin-bottom: 34px;
+    margin-bottom: 36px;
   }
 }
 .audience__buttons {
@@ -1059,7 +1059,7 @@ header {
 .audience__blocks_block {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   margin: 0;
   margin-bottom: 15px;
@@ -1119,6 +1119,7 @@ header {
 .audience__blocks_block img {
   max-width: 100%;
   margin-bottom: 22px;
+  height: 195px;
 }
 .audience__blocks_block div {
   font-weight: 700;
