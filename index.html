@@ -12,38 +12,36 @@
 </head>
 <body>
 
-  <header>
+  <header class="header">
     
     <!-- Header -->
     <div class="header-navigation container">
 
-      <div class="icon header-logo">
-        <div class="icon__img light-logo">
-          <img src="img/main-icon-dark.svg" alt="Foundation main icon">
-        </div>
-        <div class="icon__description">
-          <div class="icon__description_header">
+      <div class="logo header-logo">
+        <img src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/icon.png" alt="Logo">
+        <div class="logo__description">
+          <div class="logo__description_header">
             Foundation
           </div>
-          <div class="icon__description_info header-logo-info">
+          <div class="logo__description_info header-logo-info">
             Startup landing template
           </div>
         </div>
       </div>
 
       <div class="menu-with-button">
-        <div class="menu">
-          <nav class="menu__nav">
-            <a class="menu__nav_item active" href="#">Home</a>
-            <a class="menu__nav_item" href="#">Stories</a>
-            <a class="menu__nav_item" href="#">Library</a>
-            <div class="menu__arrow-submenu">
+        <div class="navigation">
+          <nav class="navigation__nav">
+            <a class="navigation__nav_item active" href="#">Home</a>
+            <a class="navigation__nav_item" href="#">Stories</a>
+            <a class="navigation__nav_item" href="#">Library</a>
+            <div class="navigation__arrow-submenu">
               <img src="img/arrow.svg" alt="submenu arrow down">
             </div>
           </nav>
         </div>
 
-        <button class="dark-button menu__button">
+        <button class="dark-button header__button">
           Get Started
         </button>
       </div>
@@ -78,7 +76,7 @@
   <!-- About -->
   <section class="about">
     <div class="about__inner container">
-      <div class="about__inner_block">
+      <div class="article">
         <h3>
           What is it about?
         </h3>
@@ -86,7 +84,7 @@
           Building a website for a startup that looks amazing is not a rocket science anymore.
         </p>
       </div>
-      <div class="about__inner_block">
+      <div class="article">
         <h3>
           Who is it for?
         </h3>
@@ -122,81 +120,80 @@
   </section>
 
   <!-- Features mobile -->
-  <section>
-    <div class="features container">
 
-      <div class="feature">
-        <div class="feature__block">
-          <div class="top">
-            <div class="feature__block_call-to-action">
-              Acquire Customers
-            </div>
-            <div class="feature__block_header">
-              <h2>Easily find leads and customers</h2>
-            </div>
-            <div class="feature__block_text">
-              <p>Send one-off and automated email, push, and in-app messages to people. Create better stories.</p>
-            </div>
-          </div>
-          <figure class="feature__block_img">
-            <img src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/tip-asquire-customer.png" alt="Bird in cage">
-            <figcaption>
-              A better way to acquire new users
-            </figcaption>
-          </figure>
-        </div>
-      </div>
+  <section class="features container">
 
-      <div class="feature">
-        <div class="feature__block">
-          <div class="top">
-            <div class="feature__block_call-to-action">
-              Engage Users
-            </div>
-            <div class="feature__block_header">
-              <h2>Engage with your audience</h2>
-            </div>
-            <div class="feature__block_text">
-              <p>Send one-off and automated email, push, and in-app messages to people. Create better stories.</p>
-            </div>
+    <div class="feature">
+      <div class="feature__block">
+        <div class="top">
+          <div class="feature__block_call-to-action">
+            Acquire Customers
           </div>
-          <figure class="feature__block_img">
-            <img src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/tip-engage-user.png" alt="Bird in cage">
-            <figcaption>
-              Knowledge base and smart self-service
-            </figcaption>
-          </figure>
-        </div>
-      </div>
-      
-      <div class="feature">
-        <div class="feature__block">
-          <div class="top">
-            <div class="feature__block_call-to-action">
-              Support
-            </div>
-            <div class="feature__block_header">
-              <h2>The best customer experiences</h2>
-            </div>
-            <div class="feature__block_text">
-              <p>A beautifully simple system for tracking, prioritizing, and solving customer support tickets.</p>
-            </div>
+          <div class="feature__block_header">
+            <h2>Easily find leads and customers</h2>
           </div>
-          <figure class="feature__block_img">
-            <img src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/tip-support.png" alt="Bird in cage">
-            <figcaption>
-              Live chat and messaging
-            </figcaption>
-          </figure>
+          <div class="feature__block_text">
+            <p>Send one-off and automated email, push, and in-app messages to people. Create better stories.</p>
+          </div>
         </div>
+        <figure class="feature__block_img">
+          <img src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/tip-asquire-customer.png" alt="Bird in cage">
+          <figcaption>
+            A better way to acquire new users
+          </figcaption>
+        </figure>
       </div>
-
     </div>
+
+    <div class="feature">
+      <div class="feature__block">
+        <div class="top">
+          <div class="feature__block_call-to-action">
+            Engage Users
+          </div>
+          <div class="feature__block_header">
+            <h2>Engage with your audience</h2>
+          </div>
+          <div class="feature__block_text">
+            <p>Send one-off and automated email, push, and in-app messages to people. Create better stories.</p>
+          </div>
+        </div>
+        <figure class="feature__block_img">
+          <img src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/tip-engage-user.png" alt="Bird in cage">
+          <figcaption>
+            Knowledge base and smart self-service
+          </figcaption>
+        </figure>
+      </div>
+    </div>
+    
+    <div class="feature">
+      <div class="feature__block">
+        <div class="top">
+          <div class="feature__block_call-to-action">
+            Support
+          </div>
+          <div class="feature__block_header">
+            <h2>The best customer experiences</h2>
+          </div>
+          <div class="feature__block_text">
+            <p>A beautifully simple system for tracking, prioritizing, and solving customer support tickets.</p>
+          </div>
+        </div>
+        <figure class="feature__block_img">
+          <img src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/tip-support.png" alt="Bird in cage">
+          <figcaption>
+            Live chat and messaging
+          </figcaption>
+        </figure>
+      </div>
+    </div>
+
   </section>
 
   <!-- Features desktop -->
   <section class="features_outer">
-    <img class="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/hidden-ouch.png" src="img/looking-for-solution.png" alt="girl looking for solution">
+    <img class="img-decoration" src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/hidden-ouch.png" alt="girl looking for solution">
     <div class="features-dt container">
 
       <div class="feature-dt">
@@ -274,7 +271,7 @@
           One place to manage and respond to all conversations with leads and users. Receive messages from leads.
         </div>
       </div>
-      <div class="inbox__review">
+      <div class="review inbox__review">
         <div class="inbox__review_text">
           “Great widgets. Great selection. Great design and <b>easy to implement.</b> Definitely a huge time saver for a web developer!”
         </div>
@@ -295,51 +292,50 @@
   </section>
 
   <!-- Communication -->
-  <section>
-    <div class="communication container">
-      <div class="communication__info">
-        <div class="communication__info-container">
-          <div class="communication__info_tip">
-            Communicate Better
-          </div>
-          <div class="communication__info_header">
-            Built for busy small teams
-          </div>
-          <div class="communication__info_text">
-            Three products that can be used independently or combined together for your company’s needs.
-          </div>
-          <div class="communication__info_btn">
-            <button class="dark-button">Get Started</button>
-          </div>
+
+  <section class="communication container">
+    <div class="communication__info">
+      <div class="communication__info-container">
+        <div class="communication__info_tip">
+          Communicate Better
         </div>
-        <figure>
-          <img src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/hand-with-phone.png" alt="Mobile phone in hand">
-          <figcaption>A better way to acquire new users</figcaption>
-        </figure>
+        <div class="communication__info_header">
+          Built for busy small teams
+        </div>
+        <div class="communication__info_text">
+          Three products that can be used independently or combined together for your company’s needs.
+        </div>
+        <div class="communication__info_btn">
+          <button class="dark-button">Get Started</button>
+        </div>
       </div>
-      <div class="communication__line"></div>
-      <div class="communication__about">
-        <div class="communication__about_block">
-          <p><b>Subscriptions.</b> Foundation works with the tools and services you already use every day.
-          </p>
-          <a href="#">Learn more about subscriptions</a>
-        </div>
-        <div class="communication__about_block">
-          <p><b>Felxible Hours.</b> Get started with our simple snippet of JavaScript or easy to install SDKs for iOS and Android.
-          </p>
-          <a href="#">Get more info about hours</a>
-        </div>
-        <div class="communication__about_block">
-          <p><b>Communication.</b> We offer measures like 2FA and SSO to ensure the safety of your data.
-          </p>
-          <a href="#">Communication guidelines</a>
-        </div>
+      <figure>
+        <img src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/hand-with-phone.png" alt="Mobile phone in hand">
+        <figcaption>A better way to acquire new users</figcaption>
+      </figure>
+    </div>
+    <div class="communication__line"></div>
+    <div class="communication__about">
+      <div class="communication__about_block">
+        <p><b>Subscriptions.</b> Foundation works with the tools and services you already use every day.
+        </p>
+        <a href="#">Learn more about subscriptions</a>
+      </div>
+      <div class="communication__about_block">
+        <p><b>Felxible Hours.</b> Get started with our simple snippet of JavaScript or easy to install SDKs for iOS and Android.
+        </p>
+        <a href="#">Get more info about hours</a>
+      </div>
+      <div class="communication__about_block">
+        <p><b>Communication.</b> We offer measures like 2FA and SSO to ensure the safety of your data.
+        </p>
+        <a href="#">Communication guidelines</a>
       </div>
     </div>
   </section>
 
   <!-- Audience -->
-  <section class="audience-auter">
+  <section class="audience-outer">
     <div class="audience container">
       <div class="audience__info">
         <div class="audience__info_tip">Engage Visitors</div>
@@ -351,19 +347,19 @@
         <button class="audience__button light-button">Learn More</button>
       </div>
       <div class="audience__blocks">
-        <div class="audience__blocks_block">
+        <div class="audience__blocks_block user-card">
           <img src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/user-1.png" alt="developers">
           <div>Developers</div>
         </div>
-        <div class="audience__blocks_block">
+        <div class="audience__blocks_block user-card">
           <img src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/user-2.png" alt="Entertainment">
           <div>Entertainment</div>
         </div>
-        <div class="audience__blocks_block">
+        <div class="audience__blocks_block user-card">
           <img src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/user-3.png" alt="Athletes">
           <div>Athletes</div>
         </div>
-        <div class="audience__blocks_block">
+        <div class="audience__blocks_block user-card">
           <img src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/user-4.png" alt="Creators">
           <div>Creators</div>
         </div>
@@ -424,33 +420,32 @@
   </section>
 
   <!-- Hiring -->
-  <section>
-    <div class="hiring container">
-      <h2 class="hiring__header">We’re hiring</h2>
-      <p class="hiring__text">We’re a team of lifelong learners. We’re equal parts left and right brained.</p>
-      <button class="hiring__btn dark-button">More about Company</button>
-      <div class="hiring__proposals">
-        <div class="hiring__proposals_block">
-          <h3>Front-End Developer</h3>
-          <span>Los Angeles / Remote</span>
-          <svg class="hiring__proposals_arrow" width="8" height="5" viewBox="0 0 8 5" xmlns="http://www.w3.org/2000/svg">
-            <path d="M0.94 0L4 3.09042L7.06 0L8 0.951417L4 5L0 0.951417L0.94 0Z" />
-          </svg>
-        </div>
-        <div class="hiring__proposals_block">
-          <h3>Community Manager</h3>
-          <span>New York / Full-Time</span>
-          <svg class="hiring__proposals_arrow" width="8" height="5" viewBox="0 0 8 5" xmlns="http://www.w3.org/2000/svg">
-            <path d="M0.94 0L4 3.09042L7.06 0L8 0.951417L4 5L0 0.951417L0.94 0Z" />
-          </svg>
-        </div>
-        <div class="hiring__proposals_block">
-          <h3>Front-End Developer</h3>
-          <span>UX/UI Designer</span>
-          <svg class="hiring__proposals_arrow" width="8" height="5" viewBox="0 0 8 5" xmlns="http://www.w3.org/2000/svg">
-            <path d="M0.94 0L4 3.09042L7.06 0L8 0.951417L4 5L0 0.951417L0.94 0Z" />
-          </svg>
-        </div>
+
+  <section class="hiring container">
+    <h2 class="hiring__header">We’re hiring</h2>
+    <p class="hiring__text">We’re a team of lifelong learners. We’re equal parts left and right brained.</p>
+    <button class="hiring__btn dark-button">More about Company</button>
+    <div class="hiring__proposals">
+      <div class="hiring__proposals_block vacancy">
+        <h3>Front-End Developer</h3>
+        <span>Los Angeles / Remote</span>
+        <svg class="hiring__proposals_arrow" width="8" height="5" viewBox="0 0 8 5" xmlns="http://www.w3.org/2000/svg">
+          <path d="M0.94 0L4 3.09042L7.06 0L8 0.951417L4 5L0 0.951417L0.94 0Z" />
+        </svg>
+      </div>
+      <div class="hiring__proposals_block vacancy">
+        <h3>Community Manager</h3>
+        <span>New York / Full-Time</span>
+        <svg class="hiring__proposals_arrow" width="8" height="5" viewBox="0 0 8 5" xmlns="http://www.w3.org/2000/svg">
+          <path d="M0.94 0L4 3.09042L7.06 0L8 0.951417L4 5L0 0.951417L0.94 0Z" />
+        </svg>
+      </div>
+      <div class="hiring__proposals_block vacancy">
+        <h3>Front-End Developer</h3>
+        <span>UX/UI Designer</span>
+        <svg class="hiring__proposals_arrow" width="8" height="5" viewBox="0 0 8 5" xmlns="http://www.w3.org/2000/svg">
+          <path d="M0.94 0L4 3.09042L7.06 0L8 0.951417L4 5L0 0.951417L0.94 0Z" />
+        </svg>
       </div>
     </div>
   </section>
@@ -496,21 +491,19 @@
     <div class="footer container">
       <div class="footer__about">
 
-        <div class="footer__about_logo icon footer-logo">
-          <div class="icon__img dark-logo footer-logo-img">
-            <img src="img/main-icon-light.svg" alt="Foundation main icon">
-          </div>
-          <div class="icon__description">
-            <div class="icon__description_header footer-logo-header">
+        <div class="footer__about_logo logo footer-logo">
+          <img src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/icon-dark.png" alt="Logo">
+          <div class="logo__description">
+            <div class="logo__description_header footer-logo-header">
               Foundation
             </div>
-            <div class="icon__description_info footer-logo-info">
+            <div class="logo__description_info footer-logo-info">
               Startup landing template
             </div>
           </div>
         </div>
 
-        <div class="footer__about_text">
+        <div class="footer__about_text footer__description">
           Foundation is a website template for startups and small teams. It helps to build a website in no time.
         </div>
 
@@ -524,7 +517,7 @@
         </div>
       </div>
 
-      <div class="footer__navigation">
+      <div class="footer__navigation additional-navigation">
         <div class="footer__navigation_nav">
         <h3>Product</h3>
         <ul>
@@ -554,7 +547,7 @@
           <li><a href="#">License</a></li>
         </ul>
 
-        <ul class="footer__additional_social">
+        <ul class="footer__additional_social social-links">
           <li>
             <a href="#">
               <img src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/social-twitter.png" alt="Twitter icon">

@@ -116,125 +116,118 @@ header {
   background-color: #2C3241;
 }
 
-.menu {
+.navigation {
   display: none;
 }
 @media screen and (min-width: 895px) {
-  .menu {
+  .navigation {
     display: block;
   }
 }
-.menu-with-button {
+.navigation-with-button {
   display: flex;
   align-items: center;
 }
-.menu__nav {
+.navigation__nav {
   margin-right: auto;
   padding-right: 56px;
   display: flex;
   align-items: center;
 }
-.menu__nav_item {
+.navigation__nav_item {
   text-decoration: none;
   margin-left: 52px;
   color: #2B292D;
   font-size: 18px;
   line-height: 25px;
 }
-.menu__nav_item.active {
+.navigation__nav_item.active {
   font-weight: 700;
 }
-.menu__button {
-  display: none;
-}
-@media screen and (min-width: 895px) {
-  .menu__button {
-    display: block;
-    margin: auto;
-  }
-}
-.menu__arrow-submenu {
+.navigation__arrow-submenu {
   display: none;
 }
 @media screen and (min-width: 670px) {
-  .menu__arrow-submenu {
+  .navigation__arrow-submenu {
     display: block;
     margin-left: 11px;
   }
 }
 
-.icon {
+.header__button {
+  display: none;
+}
+@media screen and (min-width: 895px) {
+  .header__button {
+    display: block;
+    margin: auto;
+  }
+}
+
+.logo {
   display: flex;
   align-items: center;
   cursor: pointer;
 }
-.icon.header-logo {
+.logo.header-logo {
   padding: 8px 0 8px 15px;
 }
 @media screen and (min-width: 895px) {
-  .icon.header-logo {
+  .logo.header-logo {
     padding: 0;
   }
 }
-.icon.footer-logo {
+.logo.footer-logo {
   flex-direction: column;
 }
 @media screen and (min-width: 540px) {
-  .icon.footer-logo {
+  .logo.footer-logo {
     flex-direction: row;
   }
 }
-.icon__img {
+.logo__img {
   padding: 10px 14px;
   border-radius: 8px;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.icon__img.light-logo {
-  background: #ffffff;
-  box-shadow: 0px 1px 2px #0000001a, 0px 3px 5px #0000000d, inset 0px 1px 0px #ffffff1a;
-}
-.icon__img.dark-logo {
-  background-image: linear-gradient(137.55deg, #3142C6 4.08%, #AF61D1 100%);
-  box-shadow: 0px 1px 3px #0000001a, 0px 4px 6px #0000000d;
-}
-.icon__img.footer-logo-img {
+.logo__img.footer-logo-img {
   margin-bottom: 20px;
 }
 @media screen and (min-width: 540px) {
-  .icon__img.footer-logo-img {
+  .logo__img.footer-logo-img {
     margin-bottom: 0;
   }
 }
-.icon__description {
+.logo__description {
   display: flex;
   flex-direction: column;
   justify-content: center;
   margin-left: 13px;
 }
-.icon__description_header {
+.logo__description_header {
   font-weight: 700;
   font-size: 20px;
   line-height: 25px;
 }
-.icon__description_header.footer-logo-header {
+.logo__description_header.footer-logo-header {
   text-align: center;
 }
 @media screen and (min-width: 540px) {
-  .icon__description_header.footer-logo-header {
+  .logo__description_header.footer-logo-header {
     text-align: left;
   }
 }
-.icon__description_info {
+.logo__description_info {
   line-height: 25px;
   opacity: 0.6;
 }
-.icon__description_info.header-logo-info {
+.logo__description_info.header-logo-info {
   display: none;
 }
 @media screen and (min-width: 895px) {
-  .icon__description_info.header-logo-info {
+  .logo__description_info.header-logo-info {
     display: block;
   }
 }
@@ -383,27 +376,28 @@ header {
     display: flex;
   }
 }
-.about__inner_block {
+
+.article {
   font-size: 22px;
   line-height: 32px;
 }
 @media screen and (min-width: 1070px) {
-  .about__inner_block {
+  .article {
     max-width: 555px;
     padding-left: 0;
     padding-right: 0;
   }
 }
-.about__inner_block:first-child {
+.article:first-child {
   margin-bottom: 20px;
 }
 @media screen and (min-width: 1070px) {
-  .about__inner_block:first-child {
+  .article:first-child {
     margin-bottom: 0;
     margin-right: 29px;
   }
 }
-.about__inner_block h3 {
+.article h3 {
   font-weight: 700;
   margin-bottom: 23px;
 }
@@ -943,7 +937,7 @@ header {
   font-weight: 700;
 }
 
-.audience-auter {
+.audience-outer {
   background: #00A1C612;
 }
 
@@ -1074,11 +1068,15 @@ header {
   padding: 22px 33px;
   width: 100%;
   max-height: 300px;
-  max-width: 262px;
   background-color: #ffffff;
   box-shadow: 0px 1px 3px #0000001a, 0px 4px 6px #0000000d, inset 0px 1px 0px #ffffff1a;
   border-radius: 8px;
   cursor: pointer;
+}
+@media screen and (min-width: 670px) {
+  .audience__blocks_block {
+    max-width: 262px;
+  }
 }
 .audience__blocks_block:last-child {
   margin-bottom: 0;

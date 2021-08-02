@@ -18,8 +18,6 @@ header {
   }
 }
 
-
-
 .mobile-menu {
   background-color: $white;
   margin-left: auto;
@@ -69,7 +67,7 @@ header {
   }
 }
 
-.menu {
+.navigation {
   display: none;
 
   @include query($middle) {
@@ -100,15 +98,7 @@ header {
     }
   }
 
-  &__button {
-    display: none;
-    
-    @include query($middle) {
-      display: block;
-      margin: auto;
-    }
-  }
-
+  
   &__arrow-submenu {
     display: none; 
     
@@ -116,5 +106,13 @@ header {
       display: block;
       margin-left: 11px;
     }
+  }
+}
+.header__button {
+  display: none;
+  
+  @include query($middle) {
+    display: block;
+    margin: auto;
   }
 }

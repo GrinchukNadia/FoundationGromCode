@@ -21,30 +21,30 @@
     @include for-large {
       display: flex;
     }
-       
-    &_block {
-      font-size: 22px;
-      line-height: 32px;
-      
-      @include for-large {
-        max-width: 555px;
-        padding-left: 0;
-        padding-right: 0;
-      }
+  }
+}
 
-      &:first-child {
-        margin-bottom: 20px;
+.article {
+  font-size: 22px;
+  line-height: 32px;
+  
+  @include for-large {
+    max-width: 555px;
+    padding-left: 0;
+    padding-right: 0;
+  }
 
-        @include for-large {
-          margin-bottom: 0;
-          margin-right: 29px;
-        }
-      }
+  &:first-child {
+    margin-bottom: 20px;
 
-      h3 {
-        font-weight: 700;
-        margin-bottom: 23px;
-      }
+    @include for-large {
+      margin-bottom: 0;
+      margin-right: 29px;
     }
+  }
+
+  h3 {
+    font-weight: 700;
+    margin-bottom: 23px;
   }
 }
