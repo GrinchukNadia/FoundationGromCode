@@ -605,16 +605,16 @@ header {
   display: none;
 }
 .call-to-action.active {
-  border-bottom: 3px solid #3142C6;
+  border-bottom: 3px solid #3142c6;
 }
 .call-to-action.active p {
   display: block;
 }
 .call-to-action.active .call-to-action__header_icon {
-  fill: #3142C6;
+  fill: #3142c6;
 }
 .call-to-action.active > .call-to-action__header {
-  color: #3142C6;
+  color: #3142c6;
 }
 .call-to-action__header {
   display: flex;
@@ -1177,7 +1177,7 @@ header {
   font-weight: 700;
   font-size: 24px;
   line-height: 30px;
-  color: #3142C6;
+  color: #3142c6;
   margin-bottom: 29px;
 }
 @media screen and (min-width: 1400px) {
@@ -1373,7 +1373,7 @@ header {
 .hiring__proposals_block span {
   font-size: 16px;
   line-height: 22px;
-  color: #2B292D99;
+  color: #2b292d99;
   mix-blend-mode: normal;
 }
 .hiring__proposals_arrow {
@@ -1512,7 +1512,7 @@ header {
   color: #2b292d99;
 }
 .order__info_term a {
-  color: #3142C6;
+  color: #3142c6;
 }
 
 footer {

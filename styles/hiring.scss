@@ -79,7 +79,7 @@
       }
 
       &:hover {
-        background-color: #3141C5;
+        background-color: $dark-blue;
         box-shadow: none;
         h3, span {
           color: $white;
@@ -101,10 +101,8 @@
       span {
         font-size: 16px;
         line-height: 22px;
-        color: #2B292D99;
+        color: $light-grey-text;
         mix-blend-mode: normal;
-      }
-      img {
       }
     }
     
@@ -114,7 +112,7 @@
       top: 50%;
       transform: translateY(-50%);
       transform: rotate(-90deg);
-      fill: #2B292D;
+      fill: $text-color;
     }
   }
 }

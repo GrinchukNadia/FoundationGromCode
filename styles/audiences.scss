@@ -1,5 +1,5 @@
 .audience{
-  background: #00A1C612;
+  background: $light-blue-bg;
   max-width: 1400px;
   margin: 0 auto;
 }
@@ -183,7 +183,7 @@
       }
 
       &:hover {
-        background-color: #3141C5;
+        background-color: $dark-blue;
         transition: 0.2s;  
       }
 

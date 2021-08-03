@@ -57,7 +57,7 @@
       font-size: 14px;
       line-height: 22px;
       text-align: center;
-      color: #2b292d99;
+      color: $light-grey-text;
 
       @include query($middle) {
         display: block;

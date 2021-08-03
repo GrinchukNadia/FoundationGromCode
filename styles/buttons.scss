@@ -14,11 +14,11 @@
 }
 
 .dark-button {
-  background-color: #3040C4;
-  color: #ffffff;
+  background-color: $blue-btn-color; 
+  color: $white;
 }
 
 .light-button {
-  background-color: #ffffff;
-  color: #3040C4; 
+  background-color: $white;
+  color: $blue-btn-color; 
 }

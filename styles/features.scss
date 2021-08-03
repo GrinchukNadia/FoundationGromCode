@@ -5,7 +5,7 @@
 }
 
 .feature {
-  border-bottom: 1px solid #E3E3E3;
+  border-bottom: 1px solid $border-light-grey;
   
   &__block {
     padding-right: 15px;
@@ -26,7 +26,7 @@
       font-weight: 700;
       font-size: 22px;
       line-height: 34px;
-      color: #009B4D;
+      color: $green;
       margin-bottom: 17px;
     }
     
@@ -62,7 +62,7 @@
         font-size: 14px;
         line-height: 22px;
         text-align: center;
-        color: #2b292d99;
+        color: $light-grey-text;
       }
     }
   }
@@ -106,7 +106,7 @@
       font-weight: bold;
       font-size: 22px;
       line-height: 34px;
-      color: #009B4D;
+      color: $green;
       margin-bottom: 24px;
     }
     
@@ -158,17 +158,17 @@
   }
 
   &.active {
-    border-bottom: 3px solid #3142C6;
+    border-bottom: 3px solid $blue-links;
 
     p {
       display: block;
     }
     .call-to-action__header_icon {
-      fill: #3142C6;    
+      fill: $blue-links;    
     }
   }
   &.active > .call-to-action__header {
-    color: #3142C6;
+    color: $blue-links;
   }
 
   &__header {
