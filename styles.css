@@ -937,6 +937,8 @@ header {
 
 .audience {
   background: #00A1C612;
+  max-width: 1400px;
+  margin: 0 auto;
 }
 
 .audience-inner {
