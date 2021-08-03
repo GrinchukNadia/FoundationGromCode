@@ -996,7 +996,7 @@ header {
 }
 @media screen and (min-width: 670px) {
   .audience__info_text {
-    margin-bottom: 40px;
+    margin-bottom: 32px;
   }
 }
 .audience__buttons {
