@@ -948,6 +948,12 @@ header {
   flex-direction: column;
   align-items: center;
 }
+@media screen and (min-width: 670px) {
+  .audience {
+    padding-right: 0;
+    padding-left: 0;
+  }
+}
 @media screen and (min-width: 1400px) {
   .audience {
     padding-top: 108px;
@@ -1052,6 +1058,7 @@ header {
 @media screen and (min-width: 1400px) {
   .audience__blocks {
     justify-content: space-between;
+    width: 1139px;
   }
 }
 .audience__blocks_block {
@@ -1100,10 +1107,24 @@ header {
     margin-left: 15px;
   }
 }
+@media screen and (min-width: 1097px) {
+  .audience__blocks_block:nth-child(3) {
+    margin-right: 15px;
+  }
+}
+@media screen and (min-width: 1112px) {
+  .audience__blocks_block {
+    margin-bottom: 0px !important;
+  }
+}
 @media screen and (min-width: 1125px) {
   .audience__blocks_block {
-    margin: 0px !important;
     margin-right: 15px !important;
+  }
+}
+@media screen and (min-width: 1400px) {
+  .audience__blocks_block {
+    margin: 0 !important;
   }
 }
 .audience__blocks_block:hover {
