@@ -994,11 +994,6 @@ header {
   margin-bottom: 30px;
   max-width: 555px;
 }
-@media screen and (min-width: 670px) {
-  .audience__info_text {
-    margin-bottom: 32px;
-  }
-}
 .audience__buttons {
   margin-bottom: 40px;
   width: 100%;
