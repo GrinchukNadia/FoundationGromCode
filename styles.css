@@ -994,9 +994,9 @@ header {
   margin-bottom: 30px;
   max-width: 555px;
 }
-@media screen and (min-width: 1070px) {
+@media screen and (min-width: 670px) {
   .audience__info_text {
-    margin-bottom: 36px;
+    margin-bottom: 40px;
   }
 }
 .audience__buttons {
@@ -1016,6 +1016,9 @@ header {
 .audience__buttons .audience__button {
   width: 100%;
   max-width: 290px;
+}
+.audience__buttons .audience__button.light-button {
+  color: #000000;
 }
 .audience__buttons .audience__button:first-child {
   margin-bottom: 12px;

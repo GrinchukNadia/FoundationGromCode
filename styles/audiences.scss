@@ -55,8 +55,8 @@
       margin-bottom: 30px;
       max-width: 555px;
 
-      @include for-large {
-        margin-bottom: 36px;
+      @include for-medium {
+        margin-bottom:40px;
       }
     }
   }
@@ -77,6 +77,10 @@
     .audience__button {
       width: 100%;
       max-width: 290px;
+
+      &.light-button {
+        color: $black;
+      }
       &:first-child {
         margin-bottom: 12px;
 
