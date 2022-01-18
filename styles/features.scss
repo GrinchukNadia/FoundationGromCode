@@ -1,12 +1,6 @@
-.features {
-  @include query($middle) {
-    display: none;
-  }
-}
-
 .feature {
   border-bottom: 1px solid $border-light-grey;
-  
+
   &__block {
     padding-right: 15px;
     padding-left: 15px;
@@ -16,7 +10,6 @@
     }
 
     .top {
-
       @include for-medium {
         max-width: 60%;
       }
@@ -29,7 +22,7 @@
       color: $green;
       margin-bottom: 17px;
     }
-    
+
     &_header h2 {
       font-weight: 700;
       font-size: 40px;
@@ -72,7 +65,7 @@
 .features_outer {
   position: relative;
 
-  @include query ($middle) {
+  @include for-medium {
     margin-bottom: 90px;
   }
 
@@ -87,20 +80,35 @@
   }
 }
 
-.features-dt {
-  display: none;
+.features {
+  @include for-medium {
+    display: none;
+  }
+  &-dt {
+    display: none;
+  
+    @include for-medium {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
 
-  @include query($middle) {
-    display: flex;
-    justify-content: space-between;
+      @include for-large {
+        flex-direction: row;
+        justify-content: space-between;
+      }
+    }
   }
 }
 
+
 .feature-dt {
-  max-width: 462px;
+  @include for-large {
+    max-width: 462px;
+  }
 
   &__block {
     padding-left: 15px;
+    padding-right: 15px;
 
     &_tip {
       font-weight: bold;
@@ -109,7 +117,7 @@
       color: $green;
       margin-bottom: 24px;
     }
-    
+
     &_header h2 {
       font-weight: bold;
       font-size: 56px;
@@ -118,7 +126,7 @@
       margin-bottom: 30px;
     }
 
-    &_text p{
+    &_text p {
       font-size: 24px;
       line-height: 34px;
       margin-bottom: 42px;
@@ -129,9 +137,10 @@
     }
   }
 
-  
   &__img {
-    width: 52%;
+    @include for-large {
+      width: 52%;
+    }
 
     img {
       max-width: 100%;
@@ -140,17 +149,17 @@
 }
 
 .call-to-action {
-  border-bottom: 1px solid #2B292D26;
+  border-bottom: 1px solid #2b292d26;
   padding-bottom: 15px;
 
   &:hover .call-to-action__header {
-    color: #3143C6;
+    color: #3143c6;
   }
   &:hover .call-to-action__header_icon {
-    fill: #3143C6;
+    fill: #3143c6;
   }
   &:hover {
-    border-bottom: 1px solid #3143C6;
+    border-bottom: 1px solid #3143c6;
   }
 
   p {
@@ -164,7 +173,7 @@
       display: block;
     }
     .call-to-action__header_icon {
-      fill: $blue-links;    
+      fill: $blue-links;
     }
   }
   &.active > .call-to-action__header {

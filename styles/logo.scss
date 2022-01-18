@@ -2,11 +2,11 @@
   display: flex;
   align-items: center;
   cursor: pointer;
-  
+
   &.header-logo {
     padding: 8px 0 8px 15px;
 
-    @include query($middle) {
+    @include for-medium {
       padding: 0;
     }
   }
@@ -14,23 +14,22 @@
   &.footer-logo {
     flex-direction: column;
 
-    @include query(540px) {
+    @include for-small {
       flex-direction: row;
     }
   }
 
-  
   &__img {
     padding: 10px 14px;
     border-radius: 8px;
     display: flex;
     align-items: center;
     justify-content: center;
-    
+
     &.footer-logo-img {
       margin-bottom: 20px;
 
-      @include query(540px) {
+      @include for-small {
         margin-bottom: 0;
       }
     }
@@ -42,7 +41,6 @@
     justify-content: center;
     margin-left: 13px;
 
-    
     &_header {
       font-weight: 700;
       font-size: 20px;
@@ -51,21 +49,20 @@
       &.footer-logo-header {
         text-align: center;
 
-        @include query(540px) {
+        @include for-small {
           text-align: left;
         }
       }
     }
-    
 
     &_info {
       line-height: 25px;
       opacity: 0.6;
-    
+
       &.header-logo-info {
         display: none;
-        
-        @include query($middle) {
+
+        @include for-medium {
           display: block;
         }
       }

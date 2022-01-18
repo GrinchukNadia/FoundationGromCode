@@ -6,19 +6,15 @@
     padding-bottom: 46px;
     padding-left: 15px;
     padding-right: 15px;
-    
-    @include query($middle) {
+
+    @include for-medium {
       padding-left: $side-padding;
       padding-right: $side-padding;
-      
     }
-    
+
     @include for-large {
       padding-top: 77px;
       padding-bottom: 76px;
-    }
-    
-    @include for-large {
       display: flex;
     }
   }
@@ -27,7 +23,7 @@
 .article {
   font-size: 22px;
   line-height: 32px;
-  
+
   @include for-large {
     max-width: 555px;
     padding-left: 0;

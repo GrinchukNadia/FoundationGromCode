@@ -12,11 +12,11 @@ footer {
   padding-top: 40px;
   padding-bottom: 22px;
 
-  @include query(540px) {
+  @include for-small {
     padding-top: 43px;
     padding-bottom: 15px;
-  } 
-  @include query(820px) {
+  }
+  @include for-medium {
     display: flex;
     flex-wrap: wrap;
   }
@@ -26,15 +26,14 @@ footer {
   }
 
   &__about {
-
-    @include query(540px) {
+    @include for-small {
       margin-right: 126px;
     }
-    
+
     &_logo {
       margin-bottom: 31px;
-      
-      @include query(540px) {
+
+      @include for-small {
         margin-right: 25px;
       }
     }
@@ -47,7 +46,7 @@ footer {
       display: none;
       margin-bottom: 25px;
 
-      @include query(540px) {
+      @include for-small {
         display: block;
       }
     }
@@ -57,7 +56,7 @@ footer {
       justify-content: center;
       margin-bottom: 71px;
 
-      @include query(540px) {
+      @include for-small {
         justify-content: start;
         margin-bottom: 73px;
       }
@@ -75,8 +74,7 @@ footer {
   }
 
   &__navigation {
-
-    @include query(540px) {
+    @include for-small {
       display: flex;
     }
 
@@ -87,15 +85,15 @@ footer {
       &:first-child {
         margin-right: 82px;
       }
-  
+
       h3 {
         font-weight: bold;
         font-size: 22px;
         line-height: 28px;
         margin-bottom: 18px;
       }
-  
-      li a{
+
+      li a {
         font-size: 18px;
         line-height: 30px;
         color: $light-grey-text;
@@ -106,7 +104,7 @@ footer {
   &__additional {
     min-width: 100%;
 
-    @include query(450px) {
+    @include for-extra-small {
       display: flex;
       justify-content: space-between;
     }
@@ -117,12 +115,12 @@ footer {
       &:first-child {
         margin-bottom: 30px;
 
-        @include query(450px) {
+        @include for-extra-small {
           margin-bottom: 0;
         }
       }
 
-      li a{
+      li a {
         font-size: 14px;
         line-height: 22px;
         color: $light-grey-text;
@@ -147,13 +145,13 @@ footer {
 }
 
 .footer-devider {
-  width:  100%;
+  width: 100%;
   height: 1px;
   background-color: $border-light-grey;
   position: absolute;
   top: 282px;
 
-  @include query(540px) {
+  @include for-small {
     top: 339px;
   }
 }

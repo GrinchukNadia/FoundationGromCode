@@ -14,19 +14,20 @@
   }
 
   &__info {
-    
-    @include query($middle) {
+    @include for-medium {
       display: flex;
+    }
+    @include for-large {
       justify-content: space-between;
     }
     @include for-extra-large {
       margin-bottom: 26px;
     }
-    
+
     &-container {
       margin-bottom: 40px;
 
-      @include query($middle) {
+      @include for-medium {
         max-width: 461px;
       }
     }
@@ -60,14 +61,14 @@
     }
     &_text {
       font-size: 24px;
-      line-height: 34px; 
+      line-height: 34px;
       margin-bottom: 30px;
 
       @include for-large {
         margin-bottom: 39px;
       }
     }
-    
+
     figure {
       margin: 0;
       margin-bottom: 40px;
@@ -114,7 +115,7 @@
       justify-content: space-between;
       flex-wrap: wrap;
     }
-    
+
     &_block {
       display: flex;
       flex-direction: column;
@@ -124,7 +125,7 @@
       &:last-child {
         margin-bottom: 0;
       }
-      @include query(767px) {
+      @include for-medium {
         max-width: 360px;
       }
       @include for-extra-large {

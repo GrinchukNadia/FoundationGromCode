@@ -1,7 +1,4 @@
 @import "variables.scss";
-@import "breakpoints.scss";
-@import "buttons.scss";
-@import "container.scss";
 
 * {
   box-sizing: border-box;
@@ -23,6 +20,9 @@ ul {
   padding: 0;
 }
 
+@import "breakpoints.scss";
+@import "buttons.scss";
+@import "container.scss";
 @import "header.scss";
 @import "logo.scss";
 @import "headline.scss";
