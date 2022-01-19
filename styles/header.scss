@@ -93,6 +93,11 @@ header {
   }
 
   &__arrow-submenu {
+    width: 6px;
+    height: 6px;
+    border-bottom: 2px solid $black;
+    border-right: 2px solid $black;
+    transform: rotate(45deg);
     display: none;
 
     @include for-medium {
